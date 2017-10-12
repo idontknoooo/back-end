@@ -2,9 +2,9 @@ spring:
   application:
     name: running-info-analysis-service
   datasource:
-    url: jdbc:mysql://localhost:3306/running-info-analysis-service
+    url: jdbc:mysql://localhost:3306/rias
     username: root
-    password: "password"
+    password: password
   jpa:
     database: mysql
     hibernate:
