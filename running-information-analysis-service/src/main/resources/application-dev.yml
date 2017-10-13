@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: running-info-analysis-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/riasDB
+    username: root
+    password: password
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: create-drop
