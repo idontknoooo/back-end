@@ -1,8 +1,9 @@
 # Process
-In 'resource' folder, run  
+In 'running-info-analysis-service' folder, run  
 ```bash
 docker-compose up -d
-docker exec -it resources_rias_1 mysql -uroot -p
+docker exec -it runninginformationanalysisservice_riasDB_1 mysql -uroot -p
+password: password
 show databases;
 create database riasDB;
 ```  
@@ -12,6 +13,10 @@ mvn clean install
 cd target
 java -jar *.jar
 ```   
+
+By sending Json format data through POSTMAN using method in rest controller.
+Data file is called "data.json", in 'running-info-analysis-service' folder
+
 # Problem  
 **Solved** My program can only clean installed by mvn, but cannot connect to mysql  
   I updated 'resource' folder.  

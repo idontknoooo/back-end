@@ -15,9 +15,12 @@ import static demo.domain.RunningInfo.healthWarningLevel.HIGH;
 import static demo.domain.RunningInfo.healthWarningLevel.LOW;
 import static demo.domain.RunningInfo.healthWarningLevel.NORMAL;
 
-
-public @Entity @Table(name="RUNNING_INFO") @Data @NoArgsConstructor @JsonInclude(JsonInclude.Include.NON_NULL)
-class RunningInfo {
+@Entity
+@Table(name="RUNNING_INFO")
+@Data
+@NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class RunningInfo {
 
     enum healthWarningLevel{
         LOW, NORMAL, HIGH;
