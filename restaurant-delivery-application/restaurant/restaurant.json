@@ -1,0 +1,45 @@
+[
+  {
+    "restaurantId": "0",
+    "restaurantName": "Sushi House"
+    "menu":{
+      "menuId": "m0"
+    }
+  },
+  {
+    "restaurantId": "1",
+    "restaurantName": "Steak House",
+    "address1": "410 W 54 ST",
+    "address2": "3 Floor",
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "10019",
+    "menu":{
+      "menuId": "m1"
+    }
+  },
+  {
+    "restaurantId": "2",
+    "restaurantName": "MCd",
+    "address1": "220 W 54 ST",
+    "address2": "32 Floor",
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "10019",
+    "menu":{
+      "menuId": "m2"
+    }
+  },
+  {
+    "restaurantId": "3",
+    "restaurantName": "Chinese",
+    "menu":{
+      "menuId": "m3"
+    },
+    "address1": "299 W 94 ST",
+    "address2": "02 Floor",
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "10021"
+  }
+]

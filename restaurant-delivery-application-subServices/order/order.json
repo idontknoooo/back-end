@@ -1,0 +1,29 @@
+// Total balance and estimated time will be auto calculated
+// HTTP.PUT return 200, but when use GET, the result keep same
+[
+  {
+    "orderId": "o0",
+    "orderTimestamp":"2014-03-12T13:37:27",
+    "orderNote":"No onion please",
+    "paymentId":"p0",
+    "orderDetail":[
+      {
+        "dishId":"d0",
+        "dishName":"Chicken",
+        "dishPrice":12
+      },
+      {
+        "dishId":"d1",
+        "dishName":"Beef",
+        "dishPrice":15
+      },
+      {
+        "dishId":"d1",
+        "dishName":"Beef",
+        "dishPrice":15
+      }
+    ],
+    "inCancelled":false,
+    "isPaid":true
+  }
+]

@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.qz.cs504</groupId>
-    <artifactId>restaurant</artifactId>
+    <artifactId>payment</artifactId>
     <version>1.0.0.BUILD-SNAPSHOT</version>
 
-    <name>restaurant</name>
-    <description>Restaurant service for restaurant delivery application</description>
+    <name>Payment</name>
+    <description>Payment service for restaurant delivery application</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -18,7 +18,7 @@
     </parent>
 
     <properties>
-            <java.version>1.8</java.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
@@ -26,11 +26,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -42,11 +37,6 @@
             <artifactId>lombok</artifactId>
             <version>1.16.12</version>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>com.h2database</groupId>-->
-            <!--<artifactId>h2</artifactId>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
