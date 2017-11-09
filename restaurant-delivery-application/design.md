@@ -77,3 +77,7 @@ Classes:
 4. Service Classes(Interface Implementation): Implementations for interfaces
 5. RestController: Using method from Service(Repository) to realize HTTP request mapping and other functionalities
 6. In restController, there can be same url map to same type of HTTP requests. e.g. localhost:/8080/restaurant for GETBYID and GETBYNAME. Use restaurant/{id} instead to avoid conflict
+
+1. Use @Slf4j for log. @Slf4j is an annotation from lombok
+2. RestTemplate: for HTTP request. FULLLPATH=name+path
+3. Change Menu & Dish POST Method

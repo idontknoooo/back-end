@@ -58,13 +58,13 @@ public class AllRestController {
 //        return this.orderService.findByOrderId(orderId).isPaid();
 //    }
 //
-//    @RequestMapping(value = "order/isCancelled/{orderId}", method = RequestMethod.PUT)
-//    public void setCancelledByOrderId(@PathVariable("orderId") String orderId, @RequestBody boolean cancelled){
-//        this.orderService.setIsCancelledByOrderId(orderId, cancelled);
-//    }
-//
-//    @RequestMapping(value = "order/isCancelled/{orderId}", method = RequestMethod.GET)
-//    public boolean getCancelledByOrderId(@PathVariable("orderId") String orderId){
-//        return this.orderService.findByOrderId(orderId).isCancelled();
-//    }
+    @RequestMapping(value = "order/isCancelled/{orderId}", method = RequestMethod.PUT)
+    public void setCancelledByOrderId(@PathVariable("orderId") String orderId, @RequestBody boolean cancelled){
+        this.orderService.setIsCancelledByOrderId(orderId, cancelled);
+    }
+
+    @RequestMapping(value = "order/isCancelled/{orderId}", method = RequestMethod.GET)
+    public boolean getCancelledByOrderId(@PathVariable("orderId") String orderId){
+        return this.orderService.findByOrderId(orderId).isCancelled();
+    }
 }
