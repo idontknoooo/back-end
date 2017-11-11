@@ -27,7 +27,6 @@ public class Payment {
     private String expirationMonth;
     private String securityCode;
     private Date paymentTime;
-    //TODO add totalPrice
     @JsonCreator
     public Payment(@JsonProperty("paymentId") String paymentId,
                    @JsonProperty("orderId") String orderId,

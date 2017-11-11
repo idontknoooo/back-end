@@ -59,10 +59,12 @@ public class OrderServiceImpl implements OrderService{
         this.orderRepository.delete(orderId);
     }
 
+
+    // CircuitBreaker for Order Check
     @HystrixCommand(fallbackMethod = "preCheckOrderFallback")
     @Override
     public boolean preCheckOrder(Order order){
-        System.out.println("Check Point 1");
+        // If order is valid
         if(order.getTotalPrice() > 0 && !order.isPaid() && !order.isCancelled()){
             return true;
         }

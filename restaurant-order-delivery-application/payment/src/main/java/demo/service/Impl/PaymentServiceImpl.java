@@ -47,9 +47,10 @@ public class PaymentServiceImpl implements PaymentService{
         this.paymentRepository.deleteAll();
     }
 
+    // Check whether payment is valid
     @Override
     public boolean checkPayment(Payment payment){
-        System.out.println("CheckPayment CheckPoint1");
+        // Follow is a condition I made up
         if(payment.getCardNumber().length()<16){
             log.error("Failed during payment check. Please check your payment.");
             return false;

@@ -35,14 +35,13 @@ public class OrderRestController {
     @Autowired
     private MessageChannel output;
 
-    @RequestMapping(value = "api/order", method = RequestMethod.POST)
+    // MessageQueue Source
+    // Setup Order and Check whether it is valid
+    // Then send to messageQueue
+    @RequestMapping(value = "order", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public Order saveOrder(@RequestBody Order order){
-        /**
-         * orderTmp = this.orderService.preCheckOrder(order);
-         *
-         * // Hystrix & MQ is on preCheckOrder
-         */
+
         // Calculate totalPrice
         double totalPrice = 0;
         for(Dish dish : order.getOrderedFood()){
@@ -50,13 +49,12 @@ public class OrderRestController {
         }
         order.setTotalPrice(totalPrice);
         Order tmpOrder = this.orderService.saveOrder(order);
+
         // Setup orderTime
         order.setOrderTime(new Date());
 
         if(this.orderService.preCheckOrder(order)){
-
             this.output.send(MessageBuilder.withPayload(order).build());
-
             log.info("Order is pre-checked. Please pay your order.");
         }
         return tmpOrder;
@@ -72,14 +70,16 @@ public class OrderRestController {
         this.orderService.deleteAll();
     }
 
+    // RestTemplate Call Receiver, call is from Payment POST method
     @RequestMapping(value = "api/isPaid", method = RequestMethod.PUT)
     public void isPaid(@RequestBody String orderId){
-        System.out.println("IsPaid CheckPoint1");
         Order order = this.orderService.findByOrderId(orderId);
-        System.out.println("IsPaid CheckPoint2");
         order.setPaid(true);
+
+        // Set Random delivery time
         Random random = new Random();
         order.setEstimatedDeliveryTime(Integer.toString(5+random.nextInt(56)) + "Minutes.");
+        // Save order
         this.orderService.saveOrder(order);
     }
 }

@@ -16,12 +16,12 @@ import java.util.List;
 public class RestaurantRestController {
 
     private RestaurantService restaurantService;
-    private DishService dishService;
+//    private DishService dishService;
 
     @Autowired
     public RestaurantRestController(RestaurantService restaurantService, DishService dishService){
         this.restaurantService = restaurantService;
-        this.dishService = dishService;
+//        this.dishService = dishService;
     }
 
     @RequestMapping(value = "restaurant", method = RequestMethod.POST)
