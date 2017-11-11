@@ -78,7 +78,7 @@ public class OrderRestController {
 
         // Set Random delivery time
         Random random = new Random();
-        order.setEstimatedDeliveryTime(Integer.toString(5+random.nextInt(56)) + "Minutes.");
+        order.setEstimatedDeliveryTime(Integer.toString(5+random.nextInt(56)) + " minutes.");
         // Save order
         this.orderService.saveOrder(order);
     }
