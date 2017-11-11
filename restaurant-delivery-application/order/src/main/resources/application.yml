@@ -2,5 +2,10 @@ server:
   port: 8081
 spring:
   application:
-    name: Order
+    name: order
 #    name will be used in eureka
+com:
+  qz:
+    order:
+      receiver: http://localhost:8083
+    restaurant: http://localhost:8080

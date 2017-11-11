@@ -25,7 +25,7 @@ public class Order {
     private String orderId;
     private Date orderTimestamp = new Date();
     private String orderNote; // Note for user to add preference
-    private int estimatedDeliveryTime;
+//    private int estimatedDeliveryTime;
     private String paymentId;
 
     // If there are repeat item, just list all of them
@@ -48,7 +48,7 @@ public class Order {
         this.orderId = orderId;
         this.orderTimestamp = orderTimestamp;
         this.orderNote = orderNote;
-        this.estimatedDeliveryTime = RandomDeliveryTime();
+//        this.estimatedDeliveryTime = RandomDeliveryTime();
         this.paymentId = paymentId;
         this.orderDetail = orderDetail;
         this.totalBalance = CalculateTotalBalance(orderDetail);
@@ -67,8 +67,8 @@ public class Order {
     }
 
     // Randomly generate a estimated delivery time
-    public int RandomDeliveryTime(){
-        Random rand = new Random();
-        return rand.nextInt(55) + 5;
-    }
+//    public int RandomDeliveryTime(){
+//        Random rand = new Random();
+//        return rand.nextInt(55) + 5;
+//    }
 }

@@ -1,0 +1,312 @@
+[
+  {
+    "restaurantId":"0",
+    "restaurantName":"Chinese No_1",
+    "restaurantAddress":{
+      "address1":"410 W 53RD ST",
+      "address2":"APT 228",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"10019"
+    },
+    "menu":[
+      {
+        "dishId":"0d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":12
+      },
+      {
+        "dishId":"0d1",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":18
+      },
+      {
+        "dishId":"0d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":13
+      }
+    ]
+  },
+  {
+    "restaurantId":"1",
+    "restaurantName":"Chinese No_1",
+    "restaurantAddress":{
+      "address1":"411 W 53RD ST",
+      "address2":"APT 228",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"11019"
+    },
+    "menu":[
+      {
+        "dishId":"1d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":12
+      },
+      {
+        "dishId":"1d1",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":18
+      },
+      {
+        "dishId":"1d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":13
+      }
+    ]
+  },
+  {
+    "restaurantId":"2",
+    "restaurantName":"Chinese No_2",
+    "restaurantAddress":{
+      "address1":"422 W 53RD ST",
+      "address2":"APT 228",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"22029"
+    },
+    "menu":[
+      {
+        "dishId":"2d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":22
+      },
+      {
+        "dishId":"2d2",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":28
+      },
+      {
+        "dishId":"2d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":24
+      }
+    ]
+  },
+  {
+    "restaurantId":"3",
+    "restaurantName":"Chinese No_3",
+    "restaurantAddress":{
+      "address1":"422 W 53RD ST",
+      "address2":"APT 228",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"32029"
+    },
+    "menu":[
+      {
+        "dishId":"3d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":32
+      },
+      {
+        "dishId":"3d2",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":38
+      },
+      {
+        "dishId":"3d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":34
+      }
+    ]
+  },
+  {
+    "restaurantId":"4",
+    "restaurantName":"Chinese No_4",
+    "restaurantAddress":{
+      "address1":"422 W 54RD ST",
+      "address2":"APT 228",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"42029"
+    },
+    "menu":[
+      {
+        "dishId":"4d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":42
+      },
+      {
+        "dishId":"4d2",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":48
+      },
+      {
+        "dishId":"4d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":44
+      }
+    ]
+  },
+  {
+    "restaurantId":"5",
+    "restaurantName":"Chinese No_5",
+    "restaurantAddress":{
+      "address1":"522 W 55RD ST",
+      "address2":"APT 228",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"52029"
+    },
+    "menu":[
+      {
+        "dishId":"5d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":52
+      },
+      {
+        "dishId":"5d2",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":58
+      },
+      {
+        "dishId":"5d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":55
+      }
+    ]
+  },
+  {
+    "restaurantId":"6",
+    "restaurantName":"Chinese No_6",
+    "restaurantAddress":{
+      "address1":"622 W 66RD ST",
+      "address2":"APT 228",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"62029"
+    },
+    "menu":[
+      {
+        "dishId":"6d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":62
+      },
+      {
+        "dishId":"6d2",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":68
+      },
+      {
+        "dishId":"6d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":66
+      }
+    ]
+  },
+  {
+    "restaurantId":"7",
+    "restaurantName":"Chinese No_7",
+    "restaurantAddress":{
+      "address1":"722 W 77RD ST",
+      "address2":"APT 228",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"72029"
+    },
+    "menu":[
+      {
+        "dishId":"7d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":72
+      },
+      {
+        "dishId":"7d2",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":78
+      },
+      {
+        "dishId":"7d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":77
+      }
+    ]
+  },
+  {
+    "restaurantId":"8",
+    "restaurantName":"Chinese No_8",
+    "restaurantAddress":{
+      "address1":"822 W 88RD ST",
+      "address2":"APT 228",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"82029"
+    },
+    "menu":[
+      {
+        "dishId":"8d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":82
+      },
+      {
+        "dishId":"8d2",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":88
+      },
+      {
+        "dishId":"8d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":88
+      }
+    ]
+  },
+  {
+    "restaurantId":"9",
+    "restaurantName":"Chinese No_9",
+    "restaurantAddress":{
+      "address1":"922 W 99RD ST",
+      "address2":"APT 229",
+      "city":"New York",
+      "state":"NY",
+      "zipCode":"92029"
+    },
+    "menu":[
+      {
+        "dishId":"9d0",
+        "dishName":"Chicken Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":92
+      },
+      {
+        "dishId":"9d2",
+        "dishName":"Pork Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":99
+      },
+      {
+        "dishId":"9d2",
+        "dishName":"Beef Tariyaki",
+        "dishDescription":"***GOOD***",
+        "dishPrice":99
+      }
+    ]
+  }
+]

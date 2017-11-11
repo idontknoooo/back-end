@@ -1,9 +1,51 @@
 [
   {
     "restaurantId": "0",
-    "restaurantName": "Sushi House"
+    "restaurantName": "Sushi House",
     "menu":{
-      "menuId": "m0"
+      "menuId": "m0",
+      "dishes":[
+        {
+          "dishId":"d0",
+          "dishName":"Spicy Chicken"
+        },
+        {
+          "dishId":"d1",
+          "dishName":"Spicy Chicken"
+        },
+        {
+          "dishId":"d1x",
+          "dishName":"Chicken Tariyaki",
+          "dishDescription":"zzzzzzzzz",
+          "dishPrice":12
+        },
+        {
+          "dishId":"d2",
+          "dishName":"Sweet Sour Chicken"
+        },
+        {
+          "dishId":"d2x",
+          "dishName":"Chicken Tariyaki",
+          "dishDescription":"zzzzzzzzz",
+          "dishPrice":22
+        },
+        {
+          "dishId":"d3",
+          "dishName":"Spicy Chicken"
+        },
+        {
+          "dishId":"d3x",
+          "dishName":"Chicken Tariyaki",
+          "dishDescription":"zzzzzzzzz",
+          "dishPrice":22
+        },
+        {
+          "dishId":"d333",
+          "dishName":"Cheese Burger",
+          "dishDescription":"sssss",
+          "dishPrice":9
+        }
+      ]
     }
   },
   {
@@ -15,7 +57,8 @@
     "state": "NY",
     "zipCode": "10019",
     "menu":{
-      "menuId": "m1"
+      "menuId": "m1",
+
     }
   },
   {

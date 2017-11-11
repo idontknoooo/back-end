@@ -1,0 +1,9 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: order-receiver
+  cloud:
+    stream:
+      bindings:
+        output: order # name of MQ

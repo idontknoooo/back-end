@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 // http://localhost:8080/hystrix.stream
 @Controller
-// Redirect
+// Redirect /hystrix to /
 public class HystrixDashboardController {
 
     // root

@@ -13,6 +13,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.Random;
 
 // Call methods in RestaurantService to implement AllRestController
 @RestController
@@ -57,6 +58,12 @@ public class AllRestController {
     @RequestMapping(value = "restaurant/rid/{restaurantId}", method = RequestMethod.GET)
     public Restaurant findByRestaurantId(@PathVariable(value = "restaurantId") String restaurantId){
         return this.restaurantService.findByRestaurantId(restaurantId);
+    }
+
+    @RequestMapping(value = "/api/randomRestaurant", method = RequestMethod.GET)
+    public Restaurant getRandomRestaurant(){
+        Random random = new Random();
+        return this.restaurantService.findByRestaurantId(Integer.toString(random.nextInt(10)));
     }
 
     @RequestMapping(value = "restaurant", method = RequestMethod.POST)

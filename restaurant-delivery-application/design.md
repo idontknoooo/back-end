@@ -77,7 +77,30 @@ Classes:
 4. Service Classes(Interface Implementation): Implementations for interfaces
 5. RestController: Using method from Service(Repository) to realize HTTP request mapping and other functionalities
 6. In restController, there can be same url map to same type of HTTP requests. e.g. localhost:/8080/restaurant for GETBYID and GETBYNAME. Use restaurant/{id} instead to avoid conflict
+7. RestTemplate is used when microserviceA wants to send microserviceB object and call Rest method in microserviceB. e.g. food-order-service wants to process order, which offers in order-payment-service.
+8. Spring Cloud Stream is used when services want to communicate with MessageQueue. Service send object to MessageQ from 'source' to 'sink'. Source is 'publisher' and sink is 'consumer'.
+Source:  
+  - Dependencies: spring-cloud-stream and spring-cloud-stream-binder-rabbit
+  - application.yml: cloud.stream.bindings.output: locations
+  - @EnableBinding(Source.class)
+  - private MessageChannel output
+  - this.output.send(MessageBuilder.withPayload(positionInfo).build()) // BuildMessage and send
+Sink:  
+  - application.yml: Any port is fine, not like RestTemplate. cloud.stream.bindings.input: locations // binding on same queue as 'source'
+  - @ServiceActivator(inputChannel = Sink.INPUT)
+  - EnableBinding(Sink.class)
+  - 
+
+9. Payload: Actual message of transimitted data, without header or metadata.
+{
+    "data": {
+        "message": "Hello, world!"
+    }
+}
+In above, "Hello, world!" is the payload, all other is called protocol overhead.
+10. MessageQueue: Uses to reduce load balancing, asynchronization and avoid blocking.
 
 1. Use @Slf4j for log. @Slf4j is an annotation from lombok
 2. RestTemplate: for HTTP request. FULLLPATH=name+path
 3. Change Menu & Dish POST Method
+4. Hystrix fallback to a assigned method when current method gone wrong.

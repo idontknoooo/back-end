@@ -67,4 +67,16 @@ public class AllRestController {
     public boolean getCancelledByOrderId(@PathVariable("orderId") String orderId){
         return this.orderService.findByOrderId(orderId).isCancelled();
     }
+
+    // Refresh to make order
+    @RequestMapping(value = "autoOrder")
+    public Order autoPlaceOrder(){
+
+        // Use Rest call to return Order object
+        Order randomOrder = this.orderService.formOrder();
+
+        // Send Order object to another Rest call for MQ
+        return this.orderService.confirmOrder(randomOrder);
+
+    }
 }

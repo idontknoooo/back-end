@@ -25,6 +25,7 @@
         <module>order</module>
         <module>platform</module>
         <module>edging-service</module>
+        <module>order-receiver</module>
     </modules>
 
 

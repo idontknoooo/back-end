@@ -28,4 +28,5 @@ public interface RestaurantRepository extends PagingAndSortingRepository<Restaur
 
     Restaurant findByRestaurantId(@Param("restaurantId") String restaurantId);
 
+
 }
