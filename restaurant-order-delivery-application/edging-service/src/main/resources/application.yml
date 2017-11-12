@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: edging-service
+zuul:
+  routes:
+    order:
+      path: /order/**
+      url: http://localhost:8081
+server:
+  port: 8083

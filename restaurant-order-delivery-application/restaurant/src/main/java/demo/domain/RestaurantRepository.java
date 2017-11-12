@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 
-// TODO: Ask this! What does Path do here?
+// Serialization
 @RepositoryRestResource(path = "restaurant")
 public interface RestaurantRepository extends PagingAndSortingRepository<Restaurant, String>{
 

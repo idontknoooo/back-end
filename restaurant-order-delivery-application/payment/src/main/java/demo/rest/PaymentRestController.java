@@ -12,6 +12,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.integration.annotation.MessageEndpoint;
 import org.springframework.integration.annotation.ServiceActivator;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -25,6 +26,9 @@ public class PaymentRestController {
 
     @Autowired
     private PaymentService paymentService;
+
+//    @Autowired
+//    private SimpMessagingTemplate template;
 
     @Autowired
     private ObjectMapper mapper;
@@ -50,6 +54,7 @@ public class PaymentRestController {
             String orderService = "http://order";
             restTemplate.put(orderService+"/api/isPaid", payment.getOrderId());
             log.info("Successfully saved payment.");
+//            this.template.convertAndSend("/topic/order",payment);
             return tmpPayment;
         }
         log.error("Cannot save payment.");

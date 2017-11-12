@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ddd" />
+        <module name="edging-service" />
         <module name="eureka" />
         <module name="hystrix-dashboard" />
         <module name="order" />
@@ -14,6 +16,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ddd" target="1.8" />
+      <module name="edging-service" target="1.8" />
+      <module name="edgingservice" target="1.8" />
       <module name="eureka" target="1.6" />
       <module name="hystrix-dashboard" target="1.6" />
       <module name="order" target="1.8" />

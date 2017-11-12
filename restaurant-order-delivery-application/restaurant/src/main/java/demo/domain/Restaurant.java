@@ -25,6 +25,7 @@ public class Restaurant {
     private Address restaurantAddress;
     private List<Dish> menu;
 
+    // anti-serialization
     @JsonCreator
     public Restaurant(@JsonProperty("restaurantId") String restaurantId,
                       @JsonProperty("restaurantName") String restaurantName,
